@@ -13,5 +13,5 @@
 ## pi_montecalro.c
 モンテカルロ法を用いて円周率を求めるプログラム。並列演算の体験。
 MPIの環境で実行してください。<br>
-``` mpicc -o montecarlo_pi mpi_montecarlo_pi.c ```<br>
+``` mpicc -o montecarlo_pi mpi_montecarlo_pi.c -lgmp```<br>
 ``` mpirun -np 4 ./montecarlo_pi 10000 ```
