@@ -21,4 +21,4 @@ MPIの環境で実行してください。引数は打つ点の数<br>
 第一引数は積分範囲の分割数。第二引数は表示する桁数。
 ``` mpicc -o pi_integral pi_integral.c```<br>
 ``` mpirun -np 4 ./pi_integral 1000000 100 ```
-mpicc -o mpi_pi mpi_pi.c
+
