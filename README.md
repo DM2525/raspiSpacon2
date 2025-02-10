@@ -13,7 +13,7 @@
 ## pi_montecalro.c
 モンテカルロ法を用いて円周率を求めるプログラム。並列演算の体験。<br>
 MPIの環境で実行してください。引数は打つ点の数<br>
-``` mpicc -o pi_montecarlo pi_montecarlo.c -lgmp```<br>
+``` mpicc -o pi_montecarlo pi_montecarlo.c -lgmp ```<br>
 ``` mpirun -np 4 ./pi_montecarlo 10000 ```
 
 ## pi_integral.c
