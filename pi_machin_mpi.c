@@ -83,8 +83,7 @@ int main(int argc, char *argv[]) {
     mpfr_asprintf(&local_str_sum2, "%.*Rf", display_digits + extra_digits, local_sum2);
     
     // MPI を用いた部分和の集約
-    // 各プロセスは自分の部分和を文字列としてrank 0 に送信し、
-         rank 0 で MPFR に再構成して加算する
+    // 各プロセスは自分の部分和を文字列としてrank 0 に送信し、rank 0 で MPFR に再構成して加算する
     if (rank != 0) {
         int len1 = (int)(strlen(local_str_sum1) + 1);
         int len2 = (int)(strlen(local_str_sum2) + 1);
