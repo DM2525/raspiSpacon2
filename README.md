@@ -19,7 +19,7 @@ MPIの環境で実行してください。引数は打つ点の数<br>
 ## pi_integral.c
 積分近似法を使って円周率を求めるプログラム。MPIの環境で実行してください<br>
 第一引数は積分範囲の分割数。第二引数は表示する桁数。<br>
-``` mpicc -o pi_integral pi_integral.c```<br>
+``` mpicc -o pi_integral pi_integral.c ```<br>
 ``` mpirun -np 4 ./pi_integral 1000000 100 ```
 
 ## pi_machin_mpi.c
