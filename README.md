@@ -26,6 +26,6 @@ MPIの環境で実行してください。引数は打つ点の数<br>
 マチンの公式を使用し並列化して円周率を求めるプログラム。<br>
 使用する場合はGMPライブラリをインストールする。<br>
 第1引数に項数、第2引数に表示する桁数<br>
-``` sudo apt-get install libmpfr-dev ```
-``` mpicc -o pi_machin_mpi pi_machin_mpi.c -lmpfr -lgmp -lm ```
-``` mpirun -np 4 ./pi_machin_mpi 10000 20 ```
+``` sudo apt-get install libmpfr-dev ```<br>
+``` mpicc -o pi_machin_mpi pi_machin_mpi.c -lmpfr -lgmp -lm ```<br>
+``` mpirun -np 4 ./pi_machin_mpi 10000 20 ```<br>
