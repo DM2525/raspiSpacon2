@@ -4,22 +4,22 @@
 
 ## pi_archimedes.c
 アルキメデスの漸化式を使用した円周率を求めるプログラム<br>
-``` gcc pi_archimedes.c -o pi_archimedes -lm ```
-``` ./pi_archimedes ```
+``` gcc pi_archimedes.c -o pi_archimedes -lm ```<br>
+``` ./pi_archimedes ```<br>
 
 ## pi_machin.c
 マチンの公式を使用した円周率を求めるプログラム。<br>
 使用する場合はGMPライブラリをインストールする。<br>
-``` sudo apt-get install libgmp-dev ```
-計算精度はコード内
-``` gcc pi_machin.c -o pi_machin -lgmp ```
-``` ./pi_machin ```
+``` sudo apt-get install libgmp-dev ```<br>
+計算精度はコード内<br>
+``` gcc pi_machin.c -o pi_machin -lgmp ```<br>
+``` ./pi_machin ```<br>
 
 ## pi_montecalro.c
 モンテカルロ法を用いて円周率を求めるプログラム。並列演算の体験。<br>
 MPIの環境で実行してください。引数は打つ点の数<br>
 ``` mpicc -o pi_montecarlo pi_montecarlo.c -lgmp ```<br>
-``` mpirun -np 4 ./pi_montecarlo 10000 ```
+``` mpirun -np 4 ./pi_montecarlo 10000 ```<br>
 
 ## pi_integral.c
 積分近似法を使って円周率を求めるプログラム。MPIの環境で実行してください。<br>
