@@ -32,7 +32,7 @@ MPIの環境で実行してください。引数は打つ点の数<br>
 使用する場合はGMPライブラリをインストールする。<br>
 第1引数に項数、第2引数に表示する桁数<br>
 ``` sudo apt-get install libmpfr-dev ```<br>
-``` mpicc -o pi_machin_mpi pi_machin_mpi.c -lmpfr -lgmp -lm ```<br>
+``` mpicc pi_machin_mpi.c -o pi_machin_mpi -lmpfr -lgmp -lm ```<br>
 ``` mpirun -np 4 ./pi_machin_mpi 10000 20 ```<br>
 
 ## hello-process.c
