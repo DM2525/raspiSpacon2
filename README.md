@@ -18,13 +18,13 @@
 ## pi_montecalro.c
 モンテカルロ法を用いて円周率を求めるプログラム。並列演算の体験。<br>
 MPIの環境で実行してください。引数は打つ点の数<br>
-``` mpicc -o pi_montecarlo pi_montecarlo.c -lgmp ```<br>
+``` mpicc pi_montecarlo.c -o pi_montecarlo -lgmp ```<br>
 ``` mpirun -np 4 ./pi_montecarlo 10000 ```<br>
 
 ## pi_integral.c
 積分近似法を使って円周率を求めるプログラム。MPIの環境で実行してください。<br>
 第一引数は積分範囲の分割数。第二引数は表示する桁数。<br>
-``` mpicc -o pi_integral pi_integral.c ```<br>
+``` mpicc pi_integral.c -o pi_integral ```<br>
 ``` mpirun -np 4 ./pi_integral 1000000 100 ```
 
 ## pi_machin_mpi.c
@@ -34,3 +34,8 @@ MPIの環境で実行してください。引数は打つ点の数<br>
 ``` sudo apt-get install libmpfr-dev ```<br>
 ``` mpicc -o pi_machin_mpi pi_machin_mpi.c -lmpfr -lgmp -lm ```<br>
 ``` mpirun -np 4 ./pi_machin_mpi 10000 20 ```<br>
+
+## hello-process.c
+MPIの初歩プログラム。
+``` mpicc hello-process.c -o hello-process```<br>
+``` mpirun -np 4 ./hello-process ```<br>
